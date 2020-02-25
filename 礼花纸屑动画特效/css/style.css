@@ -1,0 +1,201 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{overflow:hidden;}
+svg {
+    background: #FFEFE9;
+    padding-left: 260px;
+    padding-top: 80px;
+}
+.conf0 {
+    fill: #FC6394;
+}
+.conf1 {
+    fill: #EF3C8A;
+}
+.conf2 {
+    fill: #5ADAEA;
+}
+.conf3 {
+    fill: #974CBE;
+}
+.conf4 {
+    fill: #3CBECD;
+}
+.conf5 {
+    fill: #813BBE;
+}
+.conf6 {
+    fill: #F9B732;
+}
+.conf7 {
+    display: none;
+    fill: none;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+.conf8 {
+    fill: none;
+    stroke: #F9B732;
+    stroke-width: 9;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+.confetti-cone {
+    transform-origin: 200px 50px;
+    animation: confetti-cone1 1.2s ease infinite;
+}
+@keyframes confetti-cone1 {
+    0% {
+        transform: translate(40px, 95px) rotate(45deg) scale(1, 1);
+    }
+    15% {
+        transform: translate(10px, 145px) rotate(45deg) scale(1.1, 0.85);
+    }
+    100% {
+        transform: translate(40px, 105px) rotate(45deg) scale(1, 1);
+    }
+}
+#yellow-strip {
+    fill: none;
+    stroke: #F9B732;
+    stroke-width: 9;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    animation: confdash 1.2s ease infinite;
+}
+@keyframes confdash {
+    0% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 500;
+        transform: translate(-30px, 30px);
+        opacity: 0;
+    }
+    2% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 500;
+        transform: translate(-30px, 30px);
+        opacity: 0;
+    }
+    35% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 900;
+        transform: translate(-2px, 0px);
+        opacity: 1;
+    }
+    85% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        transform: translate(1px, -5px);
+        opacity: 1;
+    }
+    90% {
+        stroke-dashoffset: 1000;
+        stroke-dashoffset: 1000;
+        transform: translate(2px, -8px);
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 1000;
+        stroke-dashoffset: 500;
+        transform: translate(2px, -8px);
+        opacity: 0;
+    }
+}
+#conf-a {
+    transform-origin: center center;
+    animation: confa 1.2s ease-out infinite;
+}
+@keyframes confa {
+    0% {
+        opacity: 0;
+        transform: translate(-30px, 20px) rotate(0);
+    }
+    15% {
+        opacity: 1;
+        transform: translate(25px, -10px) rotate(60deg);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(33px, -18px) rotate(180deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(37px, -23px) scale(0.5)rotate(230deg);
+    }
+}
+#conf-b {
+    transform-origin: center center;
+    animation: confb 1.2s ease-out infinite;
+}
+@keyframes confb {
+    0% {
+        opacity: 0;
+        transform: translate(-30px, 20px) rotate(0);
+    }
+    12% {
+        opacity: 1;
+        transform: translate(25px, -10px) rotate(60deg);
+    }
+    76% {
+        opacity: 1;
+        transform: translate(33px, -18px) rotate(180deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(37px, -23px) scale(0.5) rotate(240deg);
+    }
+}
+#conf-c {
+    transform-origin: center center;
+    animation: confc 1.2s ease-out infinite;
+}
+@keyframes confc {
+    0% {
+        opacity: 0.7;
+        transform: translate(-30px, 20px) rotate(0);
+    }
+    18% {
+        opacity: 1;
+        transform: translate(5px, -10px) rotate(60deg);
+    }
+    76% {
+        opacity: 1;
+        transform: translate(13px, -18px) rotate(180deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(17px, -23px) scale(0.5) rotate(230deg);
+    }
+}
+#conf-d {
+    transform-origin: center center;
+    animation: confd 1.2s ease-out infinite;
+}
+@keyframes confd {
+    0% {
+        opacity: 0.7;
+        transform: translate(-20px, 20px) rotate(0);
+    }
+    18% {
+        opacity: 1;
+        transform: translate(-5px, -10px) rotate(60deg);
+    }
+    76% {
+        opacity: 1;
+        transform: translate(-8px, -18px) rotate(180deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -23px) scale(0.5) rotate(230deg);
+    }
+}
+p{
+    position: absolute;
+    top: 320px;
+    right: 300px;
+    background-image: linear-gradient(to right,orange,rgb(0, 255, 21),pink,rgb(0, 195, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+}
